@@ -23,7 +23,7 @@ const Searchbar = ({
           <input
             type="text"
             className="grow text-sm"
-            placeholder="Search notes by title ..."
+            placeholder="Search notes by subject and title..."
             value={searchData}
             onChange={(e) => setSearchData(e.target.value)}
           />

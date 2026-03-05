@@ -35,7 +35,7 @@ const HomePage = () => {
   // Filter + search + sort logic
   const filteredNotes = notes
     .filter((note) =>
-      note.title.toLowerCase().includes(searchData.toLowerCase())
+      note.title.toLowerCase().includes(searchData.toLowerCase()) || note.subject.toLowerCase().includes(searchData.toLowerCase())
     )
     .filter((note) => {
       if (filterStatus === "completed") return note.isCompleted === true;
