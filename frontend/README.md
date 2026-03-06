@@ -114,6 +114,7 @@ npm install
 
 ### 📂 Project Structure
 
+```bash
 project-root
 │
 ├── frontend
@@ -130,6 +131,7 @@ project-root
 │   └── server.js
 │
 └── README.md
+```
 
 # ▶️ Run the Application
 
