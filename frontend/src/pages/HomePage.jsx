@@ -35,7 +35,7 @@ const HomePage = () => {
   // Filter + search + sort logic
   const filteredNotes = notes
     .filter((note) =>
-      note.title.toLowerCase().includes(searchData.toLowerCase()) || note.subject.toLowerCase().includes(searchData.toLowerCase())
+      note.subject.toLowerCase().includes(searchData.toLowerCase())
     )
     .filter((note) => {
       if (filterStatus === "completed") return note.isCompleted === true;
@@ -43,8 +43,8 @@ const HomePage = () => {
       return true;
     })
     .sort((a, b) => {
-      if (filterStatus === "asc") return a.title.localeCompare(b.title);
-      if (filterStatus === "desc") return b.title.localeCompare(a.title);
+      if (filterStatus === "asc") return a.subject.localeCompare(b.subject);
+      if (filterStatus === "desc") return b.subject.localeCompare(a.subject);
       return 0;
     });
 

@@ -9,7 +9,7 @@ const FilterComponent = ({ setFilterStatus, filterStatus }) => {
     { label: "Pending", value: "pending" },
     { label: "Asc", value: "asc" },
     { label: "Desc", value: "desc" },
-    { label: "By Category", value: "category" },
+    { label: "Listing By Category", value: "category" },
   ];
 
   const handleClick = (value) => {

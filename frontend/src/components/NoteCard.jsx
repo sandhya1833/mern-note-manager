@@ -53,12 +53,12 @@ const NoteCard = ({ note, setNotes }) => {
 
           {/* Title */}
           <h2 className="card-title text-base md:text-lg mt-2 line-clamp-2">
-            {title}
+            {subject}
           </h2>
 
           {/* Subject */}
           <p className="text-sm opacity-70">
-            Subject: <span className="font-medium">{subject}</span>
+            Title: <span className="font-medium">{title}</span>
           </p>
 
           {/* Footer */}
